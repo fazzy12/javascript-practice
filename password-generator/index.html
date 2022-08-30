@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;1,700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>PASSWORD-GENERATOR</title>
+</head>
+<body>
+    <!-- hedings -->
+    <!-- <h1>Generate Password</h1> -->
+
+    <!-- main content -->
+    <div class="main-box row">
+        <h1>generate password</h1>
+
+        <div>
+            <div class="copy-box" id="copy-box">
+                <i title="Copy Password" class="fas fa-clone"></i>
+            </div>
+            <div class="generated-password" id="generated-box">
+                <h1 class="password" id="password"></h1>
+            </div>
+
+            <h3>settings <span> <i class="fas fa-cogs"></i> </span></h3>
+        </div>
+        
+        <div class="settings-container">
+            <h6>length: <span id="num">0</span></h6>
+            <input type="range" name="password-length" class ="pass-length" id="password-length" placeholder="Password length" min="0" max="25" step="1" value="0" required/>
+            <ul class="settings-list" id="settings-list">
+                <li>
+                    <span class="span-label">
+                        <label for="">include uppercase</label>
+                        <input type="checkbox" name="include-letters" id="include-uppercase" class="check">
+                    </span>
+                </li>
+                <li>
+                    <span class="span-label">
+                        <label for="">include lowercase</label>
+                        <input type="checkbox" name="include-letters" id="include-lowercase" class="check">
+                    </span>
+                </li>
+                <li>
+                    
+                    <span class="span-label">
+                        <label for="">include numbers</label>
+                        <input type="checkbox" name="include-numbers" id="include-numbers" class="check">
+                    </span>
+                </li>
+                <li>
+                    
+                    <span class="span-label">
+                        <label for="">include symbols</label>
+                        <input type="checkbox" name="include-symbols" id="include-symbols" class="check">
+                    </span>
+                </li>
+            </ul>
+
+            <button>generate password</button>
+        </div>
+
+
+
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
