@@ -1,0 +1,50 @@
+/* root */
+:root{
+    --color: rgb(254, 188, 67);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', 'Arial', 'Helvetica', 'sans-serif';
+    font-size: 25px;
+}
+
+#countries{
+    margin: auto;
+    margin-top: 20px;
+}
+
+h2{
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 35px;
+    color: var(--color);
+}
+
+p{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.graph-buttons{
+    margin: 0 auto;
+    margin-left: 35%;
+    width: 40%;
+    margin-top: 30px;
+}
+
+button{
+    padding: 5px;
+    width: 40%;
+    text-transform: uppercase;
+    background-color: var(--color);
+    border: none;
+    height: 35px;
+}
